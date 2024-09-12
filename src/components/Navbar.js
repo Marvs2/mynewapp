@@ -44,13 +44,15 @@ export default function Navbar() {
   return (
     <header className="bg-transparent md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <p className="title-font font-medium text-white mb-4 md:mb-0">
+        <p className="title-font font-medium text-white lg:w-3/5 mx-auto leading-relaxed text-base">
+          {/* mb-4 md:mb-0 md:py-1*/}
           <a href="#anotherabout" className="ml-3 text-xl">
             Marvin's
           </a>
         </p>
-        <nav className={`md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base   
- justify-center ${isMenuOpen || window.innerWidth < 768 ? 'hidden' : 'flex'}`}>
+        {/* md:pl-2 md:border-l flex flex-wrap */}
+        <nav className={`md:mr-auto md:ml-4 md:py-1 flex items-center text-base   
+justify-center ${isMenuOpen || window.innerWidth < 768 ? 'hidden' : 'flex'}`}>
           <a href="#projects" className="mr-5 hover:text-white">
             Past Work
           </a>

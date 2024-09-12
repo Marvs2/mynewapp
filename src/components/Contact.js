@@ -1,40 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 
-  
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");   
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
 
-  const [submitStatus, setSubmitStatus] = useState(null);   
-
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setSubmitStatus("sending");
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email,   
- message }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Error sending message");   
-
-      }
-
-      setSubmitStatus("success");
-      setName("");
-      setEmail("");
-      setMessage("");
-    } catch (error) {
-      console.error(error);
-      setSubmitStatus("failed");
-    }
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
   }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+  }
+
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
