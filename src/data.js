@@ -1,40 +1,63 @@
 export const projects = [
-    {
-      title: "React Reserve",
-      subtitle: "MERN Stack",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "../images/images.gif",
-      link: "https://github.com/Marvs2",
-      // link: "https://reactbootcamp.com",
-    },
-    {
-      title: "React Tracks",
-      subtitle: "React and Python",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-2.gif",
-      link: "https://github.com/Marvs2",
-      // link: "https://reedbarger.com",
-    },
-    {
-      title: "DevChat",
-      subtitle: "React and Firebase",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-3.gif",
-      link: "https://github.com/Marvs2",
-      // link: "https://jsbootcamp.com",
-    },
-    {
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://github.com/Marvs2",
-      // link: "https://pythonbootcamp.com",
-    },
+  {
+    title: "SASS",
+    subtitle: "Python Flask, HTML, CSS, Bootstrap, JavaScript, APIs",
+    description: "Developed and maintained features for academic services. Advised students on course selection and managed student records. Assisted with appointment scheduling to enhance academic service efficiency.",
+    image: "../images/image.gif",
+    link: "https://github.com/Marvs2",
+  },
+  {
+    title: "Cemetery Locator Analysis: Grave Plot Mapping and Information System",
+    subtitle: "PHP, HTML, CSS, JavaScript, jQuery, Bootstrap, Canvas.js",
+    description: "Developed a system for managing cemetery plots, focusing on tracking availability and plot. Implemented a 2D mapping feature to visually represent and locate graves efficiently. Designed an intuitive form to streamline the process of adding entries.",
+    image: "../images/image.gif",
+    link: "https://github.com/Marvs2",
+  },
+  {
+    title: "E - Commerce System",
+    subtitle: "Python, HTML, CSS, Bootstrap, Figma, JavaScript",
+    description: "Built an online platform for purchasing and renting books, with a wide selection of genres. Developed a user-friendly interface to streamline book browsing and rentals. Integrated secure online payment systems to facilitate transactions. ",
+    image: "../images/image.gif",
+    link: "https://github.com/Marvs2",
+  },
+
+  
+    // {
+    //   title: "React Reserve",
+    //   subtitle: "MERN Stack",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    //   image: "../images/images.gif",
+    //   link: "https://github.com/Marvs2",
+    //   // link: "https://reactbootcamp.com",
+    // },
+    // {
+    //   title: "React Tracks",
+    //   subtitle: "React and Python",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    //   image: "./project-2.gif",
+    //   link: "https://github.com/Marvs2",
+    //   // link: "https://reedbarger.com",
+    // },
+    // {
+    //   title: "DevChat",
+    //   subtitle: "React and Firebase",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    //   image: "./project-3.gif",
+    //   link: "https://github.com/Marvs2",
+    //   // link: "https://jsbootcamp.com",
+    // },
+    // {
+    //   title: "Epic Todo App",
+    //   subtitle: "React Hooks",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    //   image: "./project-4.gif",
+    //   link: "https://github.com/Marvs2",
+    //   // link: "https://pythonbootcamp.com",
+    // },
   ];
 
   export const skills = [
