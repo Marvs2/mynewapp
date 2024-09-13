@@ -62,7 +62,7 @@ import Testimonials from "./components/Testimonials";
 // import NewAbout from "./components/NewAbout";
 import AnotherAbout from "./components/anotherAbout";
 
-
+// import Slick from "./components/Slick";
 // import Click from "./components/Click";
 // import Counter from "./components/Counter";
 
@@ -78,6 +78,7 @@ export default function App() {
       <Projects />
       <Skills />
       <Testimonials />
+      {/* <Slick/> */}
       <Contact />
     </main>
   );

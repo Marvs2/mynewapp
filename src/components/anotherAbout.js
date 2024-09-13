@@ -42,6 +42,12 @@ const Content = styled.div`
   max-width: 700px;
   text-align: left;
   left: 150px;
+
+  @media(max-width: 728px) {
+  flex: 1;
+  max-width: 100%;
+  left: 0;
+  }
 `;
 
 const Title = styled.h1`
@@ -49,6 +55,12 @@ const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.2;
+  // background: rgb(207,182,12);
+  // background: linear-gradient(90deg, rgba(207,182,12,1) 0%, rgba(117,9,121,1) 35%, rgba(0,132,255,1) 100%); //more darken light
+  background: rgb(204,191,106);
+  background: linear-gradient(90deg, rgba(204,191,106,1) 11%, rgba(172,0,178,1) 40%, rgba(63,150,231,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  // Makes the gradient apply to text
 `;
 
 const Description = styled.p`
@@ -73,6 +85,7 @@ const ImageContainer = styled.div`
   position: relative;
   @media (max-width: 728px) {
         width: 100%;
+        margin-top: 20px;
     }
 `;
 
@@ -85,9 +98,12 @@ const BackgroundBox = styled.div`
   height: 410px;
   background-color: blue;
   z-index: 1;
+
    @media (max-width: 728px) {
         left: 0;
         right: 0;
+        width: auto;
+        height: auto;
     }
 `;
 
@@ -100,9 +116,12 @@ const BackgroundBox2 = styled.div`
   height: 400px;
   background-color: orange;
   z-index: 1;
+
   @media (max-width: 728px) {
         left: 0;
         right: 0;
+        width: auto;
+        height: auto;
     }
 `;
 
@@ -117,8 +136,9 @@ const StyledImage = styled.img`
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
   transition: opacity 0.5s ease;
   @media (max-width: 728px) {
-        width: 100%;
+        width: auto;
         height: auto;
+        left: 0;
     }
 
     @media (min-width: 90%) {
@@ -154,7 +174,7 @@ const AnotherAbout = () => {
       <Content>
         <Title><TypeAnimation
         sequence={[
-          "Hi, I'm Marvin! ",
+          "I'm Marvin Villanueva",
           2000,
           "I'm a Front-End Developer",
           2000,
@@ -168,7 +188,7 @@ const AnotherAbout = () => {
         style={{ fontSize: '3rem' }}
       /></Title>
         <Description>I work in the sweet spot for innovation, somewhere between strategy, design, and technology. I love the Web and the work we do.</Description>
-        <Button href="#contact">Work With Me</Button>
+        <Button href="#contact">Be part of my Journey</Button>
       </Content>
       <ImageContainer>
         <BackgroundBox />

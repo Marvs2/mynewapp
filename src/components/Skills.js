@@ -1,10 +1,16 @@
 import React from "react";
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { skills } from "../data";
+import styled from "styled-components";
 
+const BackSkill = styled.section`
+    background-color: #0a0f24;
+  color: white;
+`;
 export default function Skills() {
   return (
     <section id="skills">
+      <BackSkill>
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4" />
@@ -35,6 +41,7 @@ export default function Skills() {
           ))}
         </div>
       </div>
+      </BackSkill>
     </section>
   );
 }

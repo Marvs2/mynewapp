@@ -1,4 +1,11 @@
 import React from "react";
+import styled from "styled-components";
+
+const ConBack = styled.section`
+  background-color: #0a0f24;
+  color: white;
+`;
+
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -26,6 +33,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative">
+      <ConBack>
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
@@ -54,7 +62,7 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl" className="text-indigo-400 leading-relaxed">
                 mavingaye947@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
@@ -120,6 +128,7 @@ export default function Contact() {
           </button>
         </form>
       </div>
+      </ConBack>
     </section>
   );
 }
