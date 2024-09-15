@@ -17,7 +17,7 @@ export const projects = [
     title: "E - Commerce System",
     subtitle: "Python, HTML, CSS, Bootstrap, Figma, JavaScript",
     description: "Built an online platform for purchasing and renting books, with a wide selection of genres. Developed a user-friendly interface to streamline book browsing and rentals. Integrated secure online payment systems to facilitate transactions. ",
-    image: require("./images/Screenshot 2024-02-06 233046.png"),
+    image: require("./images/Screenshot 2024-09-16 000510.png"),
     link: "https://github.com/Marvs2",
   },
 
