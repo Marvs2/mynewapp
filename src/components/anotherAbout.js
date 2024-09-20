@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import styled from "styled-components";
+// import ImageFlicker from "./ImageFlicker";
 import image1 from "../images/togame.jpeg";
 import image2 from "../images/doit.jpg";
 import image3 from "../images/businessman.jpg";
@@ -12,8 +13,9 @@ import image4 from "../images/mayor.jpg";
 const images = [image1, image2, image3, image4];
 
 const SliderContainer = styled.div`
-  padding: 5px 2px;
-  background-color: #0a0f24;
+  padding: 15px 2px 15px 2px;
+  // background-color: #0a0f24;
+  background: linear-gradient(to bottom, #0a0f24, #1b3c88, #5d8ae7);  // Slight black to blue to light blue
   color: white;
 `;
 
@@ -22,14 +24,14 @@ const AboutContainer = styled.section`
   justify-content: center;
   align-items: center;
   padding: 50px 50px;
-  background-color: #0a0f24;
-  color: white;
+  // background-color: #0a0f24;
+   background: linear-gradient(to bottom, #0a0f24, #1b3c88, #5d8ae7);  // Same gradient for the section
   height: 100vh;
 
-   @media (max-width: 728px) {
+   @media (max-width: 768px) {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
+        padding: 50px;
     }
 
     @media (min-width: 90%) {
@@ -43,7 +45,7 @@ const Content = styled.div`
   text-align: left;
   left: 150px;
 
-  @media(max-width: 728px) {
+  @media(max-width: 768px) {
   flex: 1;
   max-width: 100%;
   left: 0;
@@ -55,10 +57,9 @@ const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.2;
-  // background: rgb(207,182,12);
-  // background: linear-gradient(90deg, rgba(207,182,12,1) 0%, rgba(117,9,121,1) 35%, rgba(0,132,255,1) 100%); //more darken light
-  background: rgb(204,191,106);
-  background: linear-gradient(90deg, rgba(204,191,106,1) 11%, rgba(172,0,178,1) 40%, rgba(63,150,231,1) 100%);
+  
+background: linear-gradient(90deg, rgba(204,191,106,1) 11%, rgba(172,0,178,1) 40%, rgba(63,150,231,1) 100%);
+  //  background: linear-gradient(90deg, rgba(82, 143, 162, 1) 11%, rgba(0, 82, 102, 1) 40%, rgba(48, 105, 100, 1) 100%);  // Updated to match the color palette
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  // Makes the gradient apply to text
 `;
@@ -66,14 +67,19 @@ const Title = styled.h1`
 const Description = styled.p`
   font-size: 1.25rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const Button = styled.a`
-  background-color: #ff5e57;
+  background-color: #70a1ff;  // Deep purple-blue
   padding: 12px 24px;
   color: white;
   text-decoration: none;
   border-radius: 25px;
+  border-shadow: rgba(0, 0, 51, 0.5);
   font-weight: bold;
   margin-right: 10px;
 `;
@@ -82,10 +88,14 @@ const ImageContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  @media (max-width: 728px) {
-        width: 100%;
-        margin-top: 20px;
+  @media (max-width: 768px) {
+        width: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 30px 5px 30px 5px;
     }
 `;
 
@@ -96,10 +106,11 @@ const BackgroundBox = styled.div`
   bottom: 4dvh;
   width: 270px;
   height: 410px;
-  background-color: blue;
+  // background-color: blue;
+  background-color: #70a1ff;  // sky Blue
   z-index: 1;
 
-   @media (max-width: 728px) {
+   @media (max-width: 768px) {
         left: 0;
         right: 0;
         width: auto;
@@ -110,14 +121,15 @@ const BackgroundBox = styled.div`
 const BackgroundBox2 = styled.div`
   position: absolute;
   right: 105px;
-  left: 41dvh;
+  left: 38dvh;
   top: 4dvh;
   width: 277px;
   height: 400px;
-  background-color: orange;
+  // background-color: orange;
+  background-color: #3B4C80 ; // steel blue
   z-index: 1;
 
-  @media (max-width: 728px) {
+  @media (max-width: 768px) {
         left: 0;
         right: 0;
         width: auto;
@@ -139,11 +151,7 @@ const StyledImage = styled.img`
         width: auto;
         height: auto;
         left: 0;
-    }
-
-    @media (min-width: 90%) {
-        width: 350px;
-    }
+  }
 `;
 
 
@@ -193,6 +201,7 @@ const AnotherAbout = () => {
       <ImageContainer>
         <BackgroundBox />
          <StyledImage src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+         {/* <ImageFlicker /> */}
          <BackgroundBox2 />
       </ImageContainer>
     </AboutContainer>

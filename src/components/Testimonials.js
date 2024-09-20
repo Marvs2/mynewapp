@@ -4,8 +4,9 @@ import { testimonials } from '../data';
 import styled from "styled-components";
 
 const BackTest = styled.section`
-    background-color: #0a0f24;
+    background-color: #1B1A55;
   color: white;
+  height: 100%;
 `;
 
 export default function Testimonials() {
@@ -13,8 +14,8 @@ export default function Testimonials() {
     <section id="testimonials">
       <BackTest>
       <div className="container px-5 mx-auto text-center">
-        <UsersIcon className="w-10 inline-block mb-4" />
-        <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
+        <UsersIcon className="w-10 inline-block mb-4 hover:animate-gradient" />
+        <h1 className="sm:text-4xl text-3xl font-medium title-font text-white hover:animate-gradient mb-12">
           Curriculum Vitae
         </h1>
 
@@ -26,7 +27,7 @@ export default function Testimonials() {
               }`}
               key={index}
             >
-              <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded flex flex-col items-center text-justify">
+              <div className="h-full bg-[#070F2B] bg-opacity-90 p-8 rounded flex flex-col items-center text-justify">
                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
                 <div className="h-auto overflow-y-auto mb-6">
                   <p className="text-sm">{testimonial.quote}</p>

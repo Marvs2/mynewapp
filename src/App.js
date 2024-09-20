@@ -55,12 +55,15 @@
 import React from "react";
 // import About from "./components/About";
 import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 // import NewAbout from "./components/NewAbout";
 import AnotherAbout from "./components/anotherAbout";
+// import AnotherNavbar from "./components/anotherNavbar";
+// import ImageFlicker from "./components/ImageFlicker";
 
 // import Slick from "./components/Slick";
 // import Click from "./components/Click";
@@ -71,14 +74,16 @@ export default function App() {
     <main className="text-gray-400 bg-gray-900 body-font">
       {/* <Click />
       <Counter /> */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <Nav />
+      {/* <AnotherNavbar /> */}
       {/* <About /> */}
       {/* <NewAbout/> */}
+      {/* <ImageFlicker /> */}
       <AnotherAbout />
       <Projects />
       <Skills />
       <Testimonials />
-      {/* <Slick/> */}
       <Contact />
     </main>
   );

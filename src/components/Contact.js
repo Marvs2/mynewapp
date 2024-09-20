@@ -4,6 +4,7 @@ import styled from "styled-components";
 const ConBack = styled.section`
   background-color: #0a0f24;
   color: white;
+  height: 100%;
 `;
 
 
@@ -47,7 +48,7 @@ export default function Contact() {
             // style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.737611577857!2d121.0878287997962!3d14.670826540095701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9fa425866b9%3A0x90b85a7d6c31e31e!2sEagle%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1722526363716!5m2!1sen!2sph"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+          <div className="bg-[#535C91] relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
@@ -73,7 +74,7 @@ export default function Contact() {
           </div>
         </div>
         <form
-          netlify
+          netlify="true"
           name="contact"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">

@@ -4,7 +4,7 @@ import { skills } from "../data";
 import styled from "styled-components";
 
 const BackSkill = styled.section`
-    background-color: #0a0f24;
+    background-color: #1B1A55;
   color: white;
 `;
 export default function Skills() {
@@ -26,7 +26,7 @@ export default function Skills() {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           {skills.map((skill) => (
             <div key={skill.name} className="p-2 sm:w-1/2 w-full">
-                <div className="bg-gray-800 rounded flex p-4 h-full items-center justify-between">
+                <div className="bg-[#070F2B] rounded flex p-4 h-full items-center justify-between">
                 <div className="flex items-center">
                     <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
                     <span className="title-font font-medium text-white">
