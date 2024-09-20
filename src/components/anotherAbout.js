@@ -74,7 +74,7 @@ const Description = styled.p`
 `;
 
 const Button = styled.a`
-  background-color: #70a1ff;  // Deep purple-blue
+  background-color: #4b6584;  // steel-blue
   padding: 12px 24px;
   color: white;
   text-decoration: none;
@@ -82,6 +82,14 @@ const Button = styled.a`
   border-shadow: rgba(0, 0, 51, 0.5);
   font-weight: bold;
   margin-right: 10px;
+
+  background-color 0.3s ease;
+   &:hover {
+    font-weight: bold;
+    line-height: 2.2;
+    background-color: #70a1ff; // Hover effect color
+    background-size: 200% 200%;
+  }
 `;
 
 const ImageContainer = styled.div`
