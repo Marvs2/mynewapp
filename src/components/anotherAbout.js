@@ -196,7 +196,9 @@ const AnotherAbout = () => {
           2000,
           "I'm a Back-End Developer",
           2000,
-          "I'm a Lead Developer",
+          "I'm a Web Developer",
+          2000,
+          "I'm a Programmer",
           2000,
         ]}
         speed={50}
